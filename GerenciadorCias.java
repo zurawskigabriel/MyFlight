@@ -1,23 +1,25 @@
 import java.util.ArrayList;
 
 public class GerenciadorCias {
-    private ArrayList<CiaAerea> empresas;
+    public ArrayList<CiaAerea> empresas;
 
-    public void addcias() {
-
+    public void addcias(CiaAerea empresa) {
+        empresas.add(empresa);
     }
 
-    public CiaAerea listarcias() {
-        return;
-    }
-
-    public CiaAerea buscarcias() {
-        return;
-    }
-
-    public CiaAerea buscarnome() {
-        
-    }
+    /*
+     * public ArrayList<CiaAerea> listarTodas() {
+     * return;
+     * }
+     * 
+     * public CiaAerea buscarCodigo(String codigo) {
+     * return;
+     * }
+     * 
+     * public CiaAerea buscarNome(String codigo) {
+     * return;
+     * }
+     * 
+     */
 
 }
-

@@ -3,15 +3,17 @@ import java.util.ArrayList;
 public class GerenciadorVoos {
     private ArrayList<Voo> voos;
 
-    public void addvoos() {
-
+    public void addvoo(Voo voo) {
+        voos.add(voo);
     }
 
-    public Voo listarvoos() {
-        return;
-    }
-
-    public Voo buscarvoos() {
-        return;
-    }
+    /*
+     * public ArrayList<Voo> listarTodos() {
+     * return;
+     * }
+     * 
+     * public ArrayList<Voo> buscarData() {
+     * return;
+     * }
+     */
 }
