@@ -18,6 +18,13 @@ public class Voo {
         this.status = status;
     }
 
+    @Override
+    public String toString() {
+        String lista = "Horário:  " + datahora + "\nDuração: " + duracao + "\nRota: " + rota + "\nStatus: " + status;
+
+        return lista;
+    }
+
     //////////// sebrescrita /////////////
 
     public Voo(LocalDateTime datahora, Duration duracao) {

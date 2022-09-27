@@ -11,4 +11,12 @@ public class Rota {
         this.destino = destino;
         this.aeronave = aeronave;
     }
+
+    @Override
+    public String toString() {
+        String lista = "Cia: " + cia + "\nAeroporto de Origem: " + origem + "\nAeroporto de Destino: " + destino
+                + "\nAeronave: " + aeronave;
+
+        return lista;
+    }
 }

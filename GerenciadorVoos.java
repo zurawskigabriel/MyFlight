@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class GerenciadorVoos {
-    private static ArrayList<Voo> voos;
+    private ArrayList<Voo> voos = new ArrayList<>();
 
-    public static void addvoo(Voo voo) {
+    public void addvoos(Voo voo) {
         voos.add(voo);
     }
 

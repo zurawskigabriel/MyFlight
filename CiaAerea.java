@@ -7,4 +7,11 @@ public class CiaAerea {
         this.nome = nome;
         this.codigo = codigo;
     }
+
+    @Override
+    public String toString() {
+        String lista = "Nome:" + nome + "\nCódigo: " + codigo;
+
+        return lista;
+    }
 }

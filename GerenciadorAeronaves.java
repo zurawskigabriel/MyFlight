@@ -1,21 +1,21 @@
 import java.util.ArrayList;
 
 public class GerenciadorAeronaves {
-    private ArrayList<Aeronave> aeronaves;
+    private ArrayList<Aeronave> aeronaves = new ArrayList<>();
 
     public void addaeronaves(Aeronave aeronave) {
         aeronaves.add(aeronave);
     }
 
-    /*
-     * public ArrayList<Aeronave> listarTodas() {
-     * return;
-     * }
-     * 
-     * public Aeronave buscarPorCodigo(String codigo) {
-     * return;
-            * }
-     */ 
+    public int size() {
+        return aeronaves.size();
+    }
 
-     System.out.println("hello world");
+    public ArrayList<Aeronave> listarTodas() {
+        return aeronaves;
+    }
+
+    /// public Aeronave buscarPorCodigo(String codigo) {
+    /// return ;
+    /// }
 }

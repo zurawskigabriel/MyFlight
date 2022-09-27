@@ -12,6 +12,13 @@ public class Aeronave implements Imprimivel, Contavel {
         this.capacidade = capacidade;
     }
 
+    @Override
+    public String toString() {
+        String lista = "\nCodigo: " + codigo + "\nDescrição: " + descricao + "\nCapacidade: " + capacidade + "\n\n";
+
+        return lista;
+    }
+
     ///////////// Interfaces (Exercício 3) ////////////
 
     public int getTotalAeronaves() {

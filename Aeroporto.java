@@ -10,4 +10,11 @@ public class Aeroporto {
         this.loc = loc;
 
     }
+
+    @Override
+    public String toString() {
+        String lista = "Codigo: " + codigo + "\nNome: " + nome + "\nLocalização: " + loc;
+
+        return lista;
+    }
 }

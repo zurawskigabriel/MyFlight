@@ -49,21 +49,24 @@ public class Main {
     gerenciadoraeroportos.addaeroportos(aeroporto1);
     gerenciadoraeroportos.addaeroportos(aeroporto2);
 
-    GerenciadorCias.addcias(cia);
-    GerenciadorCias.addcias(cia1);
-    GerenciadorCias.addcias(cia2);
+    GerenciadorCias gerenciadorcias = new GerenciadorCias();
+    gerenciadorcias.addcias(cia);
+    gerenciadorcias.addcias(cia1);
+    gerenciadorcias.addcias(cia2);
 
-    GerenciadorRotas.addrotas(rota);
-    GerenciadorRotas.addrotas(rota1);
+    GerenciadorRotas gerenciarrotas = new GerenciadorRotas();
+    gerenciarrotas.addrotas(rota);
+    gerenciarrotas.addrotas(rota1);
 
-    /*
-     * GerenciadorVoos.addvoos(voo);
-     * GerenciadorVoos.addvoos(voo1);
-     */
+    GerenciadorVoos gerenciadorvoos = new GerenciadorVoos();
+    gerenciadorvoos.addvoos(voo);
+    gerenciadorvoos.addvoos(voo1);
 
     /////////////// Printando todos com os métodos listar ///////////////
 
-    System.out.println("Aeronaves////////////////////");
+    System.out.println("Aeronaves///////////////////\n");
+
+    System.out.println(gerenciadoraeronaves.listarTodas());
 
     System.out.println("Aeroportos////////////////////");
 
