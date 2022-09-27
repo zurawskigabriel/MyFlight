@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class GerenciadorAeronaves {
-    private static ArrayList<Aeronave> aeronaves;
+    private ArrayList<Aeronave> aeronaves;
 
-    public static void addaeronaves(Aeronave aeronave) {
+    public void addaeronaves(Aeronave aeronave) {
         aeronaves.add(aeronave);
     }
 

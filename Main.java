@@ -1,73 +1,77 @@
-import java.time.LocalDateTime;
 import java.time.Duration;
-import java.util.ArrayList;
+import java.time.LocalDateTime;
 
 public class Main {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        /////////////// criação dos objetos ///////////////
+    /////////////// criação dos objetos ///////////////
 
-        Geo loc = new Geo(111, 222);
-        Geo loc1 = new Geo(333, 444);
-        Geo geo = new Geo(555, 666);
+    /*
+     * Voo.Status status = Voo.Status.CONFIRMADO;
+     * Voo.Status status1 = Voo.Status.ATRASADO;
+     */
 
-        CiaAerea cia = new CiaAerea("Gol", "Gol123");
-        CiaAerea cia1 = new CiaAerea("TAM", "TAM123");
-        CiaAerea cia2 = new CiaAerea("Azul", "Azul123");
+    Geo loc = new Geo(111, 222);
+    Geo loc1 = new Geo(333, 444);
+    Geo geo = new Geo(555, 666);
 
-        Aeroporto aeroporto = new Aeroporto("Guarulhos123", "Guarulhos", loc);
-        Aeroporto aeroporto1 = new Aeroporto("SalgadoFilho123", "Salgado Filho", loc1);
-        Aeroporto aeroporto2 = new Aeroporto("Congonhas123", "Congonhas", geo);
+    CiaAerea cia = new CiaAerea("Gol", "Gol123");
+    CiaAerea cia1 = new CiaAerea("TAM", "TAM123");
+    CiaAerea cia2 = new CiaAerea("Azul", "Azul123");
 
-        Aeronave aeronave = new Aeronave("Boing 767", "tem fetiche por gemeas", 100);
-        Aeronave aeronave1 = new Aeronave("Boing 777", "o fuscão preto é mais rápido", 200);
+    Aeroporto aeroporto = new Aeroporto("Guarulhos123", "Guarulhos", loc);
+    Aeroporto aeroporto1 = new Aeroporto("SalgadoFilho123", "Salgado Filho", loc1);
+    Aeroporto aeroporto2 = new Aeroporto("Congonhas123", "Congonhas", geo);
 
-        Rota rota = new Rota(cia, aeroporto1, aeroporto2, aeronave);
-        Rota rota1 = new Rota(cia2, aeroporto, aeroporto2, aeronave1);
+    Aeronave aeronave = new Aeronave("Boing 767", "tem fetiche por gemeas", 100);
+    Aeronave aeronave1 = new Aeronave("Boing 777", "o fuscão preto é mais rápido", 200);
 
-        LocalDateTime datahora = LocalDateTime.of(2022, 9, 10, 17, 30);
-        LocalDateTime datahora1 = LocalDateTime.of(2022, 8, 14, 07, 40);
+    Rota rota = new Rota(cia, aeroporto1, aeroporto2, aeronave);
+    Rota rota1 = new Rota(cia2, aeroporto, aeroporto2, aeronave1);
 
-        Duration duracao = Duration.ofMinutes(120);
-        Duration duracao1 = Duration.ofMinutes(180);
+    LocalDateTime datahora = LocalDateTime.of(2022, 9, 10, 17, 30);
+    LocalDateTime datahora1 = LocalDateTime.of(2022, 8, 14, 07, 40);
 
-        /*
-         * Voo voo = new Voo(datahora, duracao, rota, enum);
-         * Voo voo1 = new Voo(datahora1, duracao1, rota1, );
-         */
+    Duration duracao = Duration.ofMinutes(120);
+    Duration duracao1 = Duration.ofMinutes(180);
 
-        /////////////// Armazenando com os métodos add ///////////////
+    Voo voo = new Voo(datahora, duracao, rota, Voo.Status.CONFIRMADO);
+    Voo voo1 = new Voo(datahora1, duracao1, rota1, Voo.Status.ATRASADO);
 
-        GerenciadorAeronaves.addaeronaves(aeronave);
-        GerenciadorAeronaves.addaeronaves(aeronave1);
+    /////////////// Armazenando com os métodos add ///////////////
 
-        GerenciadorAeroportos.addaeroportos(aeroporto);
-        GerenciadorAeroportos.addaeroportos(aeroporto1);
-        GerenciadorAeroportos.addaeroportos(aeroporto2);
+    GerenciadorAeronaves gerenciadoraeronaves = new GerenciadorAeronaves();
+    gerenciadoraeronaves.addaeronaves(aeronave);
+    gerenciadoraeronaves.addaeronaves(aeronave1);
 
-        GerenciadorCias.addcias(cia);
-        GerenciadorCias.addcias(cia1);
-        GerenciadorCias.addcias(cia2);
+    GerenciadorAeroportos gerenciadoraeroportos = new GerenciadorAeroportos();
+    gerenciadoraeroportos.addaeroportos(aeroporto);
+    gerenciadoraeroportos.addaeroportos(aeroporto1);
+    gerenciadoraeroportos.addaeroportos(aeroporto2);
 
-        GerenciadorRotas.addrotas(rota);
-        GerenciadorRotas.addrotas(rota1);
+    GerenciadorCias.addcias(cia);
+    GerenciadorCias.addcias(cia1);
+    GerenciadorCias.addcias(cia2);
 
-        /*
-         * GerenciadorVoos.addvoos(voo);
-         * GerenciadorVoos.addvoos(voo1);
-         */
+    GerenciadorRotas.addrotas(rota);
+    GerenciadorRotas.addrotas(rota1);
 
-        /////////////// Printando todos com os métodos listar ///////////////
+    /*
+     * GerenciadorVoos.addvoos(voo);
+     * GerenciadorVoos.addvoos(voo1);
+     */
 
-        System.out.println("Aeronaves////////////////////");
+    /////////////// Printando todos com os métodos listar ///////////////
 
-        System.out.println("Aeroportos////////////////////");
+    System.out.println("Aeronaves////////////////////");
 
-        System.out.println("Cias////////////////////");
+    System.out.println("Aeroportos////////////////////");
 
-        System.out.println("Rotas////////////////////");
+    System.out.println("Cias////////////////////");
 
-        System.out.println("Voos////////////////////");
+    System.out.println("Rotas////////////////////");
 
-    }
+    System.out.println("Voos////////////////////");
+
+  }
 }

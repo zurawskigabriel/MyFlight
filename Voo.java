@@ -2,7 +2,7 @@ import java.time.LocalDateTime;
 import java.time.Duration;
 
 public class Voo {
-    public enum Status {
+    enum Status {
         CONFIRMADO, ATRASADO, CANCELADO
     }
 
