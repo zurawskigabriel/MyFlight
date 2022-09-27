@@ -17,4 +17,11 @@ public class Voo {
         this.rota = rota;
         this.status = status;
     }
+
+    //////////// sebrescrita /////////////
+
+    public Voo(LocalDateTime datahora, Duration duracao) {
+        this.datahora = datahora;
+        this.duracao = duracao;
+    }
 }
