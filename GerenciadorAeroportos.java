@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class GerenciadorAeroportos {
-    private ArrayList<Aeroporto> aeroportos;
+    private static ArrayList<Aeroporto> aeroportos;
 
-    public void addaeroportos(Aeroporto aeroporto) {
+    public static void addaeroportos(Aeroporto aeroporto) {
         aeroportos.add(aeroporto);
     }
 

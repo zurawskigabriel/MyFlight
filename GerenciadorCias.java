@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class GerenciadorCias {
-    public ArrayList<CiaAerea> empresas;
+    public static ArrayList<CiaAerea> empresas;
 
-    public void addcias(CiaAerea empresa) {
+    public static void addcias(CiaAerea empresa) {
         empresas.add(empresa);
     }
 

@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class GerenciadorRotas {
-    private ArrayList<Rota> rotas;
+    private static ArrayList<Rota> rotas;
 
-    public void addrotas(Rota rota) {
+    public static void addrotas(Rota rota) {
         rotas.add(rota);
     }
 
