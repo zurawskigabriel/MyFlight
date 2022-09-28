@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class GerenciadorVoos {
@@ -11,9 +12,18 @@ public class GerenciadorVoos {
      * public ArrayList<Voo> listarTodos() {
      * return;
      * }
-     * 
-     * public ArrayList<Voo> buscarData() {
-     * return;
-     * }
      */
+
+    public Voo buscarPorData(LocalDateTime datahora) {
+
+        for (int i = 0; i < voos.size(); i++) {
+            Voo aux = voos.get(i);
+            if (aux.getDataHora().equals(datahora)) {
+                return voos.get(i);
+            }
+        }
+
+        return null;
+    }
+
 }

@@ -11,15 +11,30 @@ public class GerenciadorCias {
      * public ArrayList<CiaAerea> listarTodas() {
      * return;
      * }
-     * 
-     * public CiaAerea buscarCodigo(String codigo) {
-     * return;
-     * }
-     * 
-     * public CiaAerea buscarNome(String codigo) {
-     * return;
-     * }
-     * 
      */
+
+    public CiaAerea buscarPorCodigo(String codigo) {
+
+        for (int i = 0; i < empresas.size(); i++) {
+            CiaAerea aux = empresas.get(i);
+            if (aux.getCodigo().equals(codigo)) {
+                return empresas.get(i);
+            }
+        }
+
+        return null;
+    }
+
+    public CiaAerea buscarPorNome(String nome) {
+
+        for (int i = 0; i < empresas.size(); i++) {
+            CiaAerea aux = empresas.get(i);
+            if (aux.getNome().equals(nome)) {
+                return empresas.get(i);
+            }
+        }
+
+        return null;
+    }
 
 }

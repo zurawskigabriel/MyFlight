@@ -1,3 +1,0 @@
-/*enum Nome{
-    CONFIRMADO, ATRASADO, CANCELADO
-}*/

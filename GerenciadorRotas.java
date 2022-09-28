@@ -11,9 +11,18 @@ public class GerenciadorRotas {
      * public ArrayList<Rota> listarTodos() {
      * return;
      * }
-     * 
-     * public ArrayList<Rota> buscarPorOrigem(String codigo) {
-     * return;
-     * }
      */
+
+    public Rota buscarPorOrigem(Aeroporto origem) {
+
+        for (int i = 0; i < rotas.size(); i++) {
+            Rota aux = rotas.get(i);
+            if (aux.getOrigem().equals(origem)) {
+                return rotas.get(i);
+            }
+        }
+
+        return null;
+    }
+
 }

@@ -5,12 +5,30 @@ public class Aeronave implements Imprimivel, Contavel {
     private String descricao;
     private int capacidade;
 
+    //////////// Criação do construtor ////////////
+
     public Aeronave(String codigo, String descricao, int capacidade) {
         totalAeronaves++;
         this.codigo = codigo;
         this.descricao = descricao;
         this.capacidade = capacidade;
     }
+
+    //////////// Criação dos gets ////////////
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public int getCapacidade() {
+        return capacidade;
+    }
+
+    //////////// Criação do toString ////////////
 
     @Override
     public String toString() {

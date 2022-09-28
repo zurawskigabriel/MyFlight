@@ -7,15 +7,21 @@ public class GerenciadorAeronaves {
         aeronaves.add(aeronave);
     }
 
-    public int size() {
-        return aeronaves.size();
-    }
+    /*
+     * public ArrayList<Aeronave> listarTodas() {
+     * return;
+     * }
+     */
 
-    public ArrayList<Aeronave> listarTodas() {
-        return aeronaves;
-    }
+    public Aeronave buscarPorCodigo(String codigo) {
 
-    /// public Aeronave buscarPorCodigo(String codigo) {
-    /// return ;
-    /// }
+        for (int i = 0; i < aeronaves.size(); i++) {
+            Aeronave aux = aeronaves.get(i);
+            if (aux.getCodigo().equals(codigo)) {
+                return aeronaves.get(i);
+            }
+        }
+
+        return null;
+    }
 }

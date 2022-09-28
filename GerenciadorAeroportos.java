@@ -13,9 +13,15 @@ public class GerenciadorAeroportos {
      * }
      */
 
-    /*
-     * public Aeroporto buscarPorCodigo(String codigo) {
-     * return;
-     * }
-     */
+    public Aeroporto buscarPorCodigo(String codigo) {
+
+        for (int i = 0; i < aeroportos.size(); i++) {
+            Aeroporto aux = aeroportos.get(i);
+            if (aux.getCodigo().equals(codigo)) {
+                return aeroportos.get(i);
+            }
+        }
+
+        return null;
+    }
 }
