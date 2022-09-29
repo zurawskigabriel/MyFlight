@@ -6,6 +6,7 @@ public class VooEscalas extends Voo{
 
     public VooEscalas(Duration duracao, Rota rota, Voo.Status status) {
         super(duracao, rota, status);
+        this.rotafinal = rotafinal;
     }
 
     private Rota rotafinal;
@@ -14,9 +15,10 @@ public class VooEscalas extends Voo{
         return rotafinal;
     }
 
+    @Override
     public String toString(){
-        String stg= "Status:"+ status;//+ " " + datahora + "("+duracao+"): " + rota + " -> " + rotaFinal;
-        return stg;
+        //String stg= "Status:"+ status;//+ " " + datahora + "("+duracao+"): " + rota + " -> " + rotaFinal;
+        //return stg;
     }
 
     /*
