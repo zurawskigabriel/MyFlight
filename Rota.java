@@ -37,8 +37,11 @@ public class Rota {
     @Override
     public String toString() {
         String lista = "Cia: " + cia + "\nAeroporto de Origem: " + origem + "\nAeroporto de Destino: " + destino
-                + "\nAeronave: " + aeronave;
+                + "\nAeronave: " + aeronave + "\n\n";
 
         return lista;
     }
+
+    //////////// Uso so compareTo (Exercicio) ////////////
+
 }

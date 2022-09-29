@@ -1,3 +1,4 @@
+import java.util.Collections;
 
 public class Aeronave implements Imprimivel, Comparable<Aeronave> {
     public static int totalAeronaves = 0;
@@ -47,9 +48,8 @@ public class Aeronave implements Imprimivel, Comparable<Aeronave> {
         System.out.println(codigo + " - " + descricao);
     }
 
-    public Aeronave compareTo(Aeronave outra) {
+    public int compareTo(Aeronave outra) {
         return descricao.compareTo(outra.descricao);
-
     }
 
 }

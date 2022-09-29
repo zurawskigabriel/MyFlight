@@ -30,7 +30,7 @@ public class Aeroporto {
 
     @Override
     public String toString() {
-        String lista = "Codigo: " + codigo + "\nNome: " + nome + "\nLocalização: " + loc;
+        String lista = "Codigo: " + codigo + "\nNome: " + nome + "\nLocalização: " + loc + "\n\n";
 
         return lista;
     }

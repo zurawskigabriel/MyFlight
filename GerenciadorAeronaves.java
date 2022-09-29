@@ -8,11 +8,9 @@ public class GerenciadorAeronaves {
         aeronaves.add(aeronave);
     }
 
-    /*
-     * public ArrayList<Aeronave> listarTodas() {
-     * return;
-     * }
-     */
+    public ArrayList<Aeronave> listarTodos() {
+        return aeronaves;
+    }
 
     public Aeronave buscarPorCodigo(String codigo) {
 
@@ -25,8 +23,6 @@ public class GerenciadorAeronaves {
 
         return null;
     }
-
-slhutfkdudctkuxfkuxkuy
 
     public void ordenaDescricao() {
         Collections.sort(aeronaves);

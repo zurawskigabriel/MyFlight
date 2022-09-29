@@ -7,11 +7,9 @@ public class GerenciadorCias {
         empresas.add(empresa);
     }
 
-    /*
-     * public ArrayList<CiaAerea> listarTodas() {
-     * return;
-     * }
-     */
+    public ArrayList<CiaAerea> listarTodos() {
+        return empresas;
+    }
 
     public CiaAerea buscarPorCodigo(String codigo) {
 

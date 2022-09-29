@@ -7,11 +7,9 @@ public class GerenciadorRotas {
         rotas.add(rota);
     }
 
-    /*
-     * public ArrayList<Rota> listarTodos() {
-     * return;
-     * }
-     */
+    public ArrayList<Rota> listarTodos() {
+        return rotas;
+    }
 
     public Rota buscarPorOrigem(Aeroporto origem) {
 

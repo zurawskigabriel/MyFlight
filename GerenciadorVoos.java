@@ -8,11 +8,9 @@ public class GerenciadorVoos {
         voos.add(voo);
     }
 
-    /*
-     * public ArrayList<Voo> listarTodos() {
-     * return;
-     * }
-     */
+    public ArrayList<Voo> listarTodos() {
+        return voos;
+    }
 
     public Voo buscarPorData(LocalDateTime datahora) {
 

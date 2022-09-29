@@ -7,11 +7,9 @@ public class GerenciadorAeroportos {
         aeroportos.add(aeroporto);
     }
 
-    /*
-     * public ArrayList<Aeroporto> listarTodos() {
-     * return;
-     * }
-     */
+    public ArrayList<Aeroporto> listarTodos() {
+        return aeroportos;
+    }
 
     public Aeroporto buscarPorCodigo(String codigo) {
 

@@ -42,7 +42,8 @@ public class Voo {
 
     @Override
     public String toString() {
-        String lista = "Horário:  " + datahora + "\nDuração: " + duracao + "\nRota: " + rota + "\nStatus: " + status;
+        String lista = "Horário:  " + datahora + "\nDuração: " + duracao + "\nRota: " + rota + "\nStatus: " + status
+                + "\n\n";
 
         return lista;
     }
