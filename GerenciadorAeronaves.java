@@ -26,6 +26,8 @@ public class GerenciadorAeronaves {
         return null;
     }
 
+slhutfkdudctkuxfkuxkuy
+
     public void ordenaDescricao() {
         Collections.sort(aeronaves);
     }
