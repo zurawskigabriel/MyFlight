@@ -59,40 +59,52 @@ public class Main {
 
     /////////////// Printando todos com os métodos listar ///////////////
 
-    /*
-     * System.out.println("Aeronaves////////////////////\n");
-     * 
-     * System.out.println(gerenciadoraeronaves.listarTodas())
-     * 
-     * System.out.println("Aeroportos////////////////////");
-     * 
-     * System.out.println("Cias////////////////////");
-     * 
-     * System.out.println("Rotas////////////////////");
-     * 
-     * System.out.println("Voos////////////////////");/*
-     */
+    System.out.println("Aeronaves////////////////////////////////////////////////////////////\n");
+
+    System.out.println(gerenciadoraeronaves.listarTodos().toString());
+
+    System.out.println("Aeroportos////////////////////////////////////////////////////////////");
+
+    System.out.println(gerenciadoraeroportos.listarTodos().toString());
+
+    System.out.println("Cias////////////////////////////////////////////////////////////");
+
+    System.out.println(gerenciadorcias.listarTodos().toString());
+
+    System.out.println("Rotas////////////////////////////////////////////////////////////");
+
+    System.out.println(gerenciarrotas.listarTodos().toString());
+
+    System.out.println("Voos////////////////////////////////////////////////////////////");
+
+    System.out.println(gerenciadorvoos.listarTodos().toString());
 
     /////////////// Realizando pesquisas e printando ///////////////
 
-    System.out
-        .println("Aeronave de código Boing 777: \n" + gerenciadoraeronaves.buscarPorCodigo("Boing 777").toString());
-
-    System.out.println("Aeroporto de código SalgadoFilho123: \n\n"
-        + gerenciadoraeroportos.buscarPorCodigo("SalgadoFilho123").toString() + "\n\n");
-
-    System.out
-        .println("Empresa de código Azul123: \n\n" + gerenciadorcias.buscarPorCodigo("Azul123").toString() + "\n\n");
-
-    System.out.println("Empresa de nome Azul: \n\n" + gerenciadorcias.buscarPorNome("Azul").toString() + "\n");
-
-    // System.out.println(
-    // "Rota de origem Congonhas (aeroporto2): \n\n" +
-    // gerenciarrotas.buscarPorOrigem(aeroporto).toString() + "\n\n");
-
-    // System.out
-    // .println("Voo das 07:40 (datahora1): \n\n" +
-    // gerenciadorvoos.buscarPorData(datahora1).toString() + "\n\n");
+    /*
+     * System.out
+     * .println("Aeronave de código Boing 777: \n" +
+     * gerenciadoraeronaves.buscarPorCodigo("Boing 777").toString());
+     * 
+     * System.out.println("Aeroporto de código SalgadoFilho123: \n\n"
+     * + gerenciadoraeroportos.buscarPorCodigo("SalgadoFilho123").toString() +
+     * "\n\n");
+     * 
+     * System.out
+     * .println("Empresa de código Azul123: \n\n" +
+     * gerenciadorcias.buscarPorCodigo("Azul123").toString() + "\n\n");
+     * 
+     * System.out.println("Empresa de nome Azul: \n\n" +
+     * gerenciadorcias.buscarPorNome("Azul").toString() + "\n");
+     * 
+     * // System.out.println(
+     * // "Rota de origem Congonhas (aeroporto2): \n\n" +
+     * // gerenciarrotas.buscarPorOrigem(aeroporto).toString() + "\n\n");
+     * 
+     * // System.out
+     * // .println("Voo das 07:40 (datahora1): \n\n" +
+     * // gerenciadorvoos.buscarPorData(datahora1).toString() + "\n\n");
+     */
 
   }
 }
