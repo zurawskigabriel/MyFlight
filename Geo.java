@@ -40,4 +40,9 @@ public class Geo {
 
         return d;
     }
+
+    public double distancia(Geo outra) {
+        Geo obj = new Geo(getLatitude(), getLongitude());
+        return distancia(obj, outra);
+    }
 }

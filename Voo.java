@@ -47,10 +47,11 @@ public class Voo {
         return lista;
     }
 
-    //////////// sebrescrita (Exercicio) ////////////
+    //////////// sobrecarga (Exercicio) ////////////
 
-    public Voo(LocalDateTime datahora, Duration duracao) {
-        this.datahora = datahora;
+    public Voo(Duration duracao, Rota rota, Status status) {
         this.duracao = duracao;
+        this.rota = rota;
+        this.status = status;
     }
 }
