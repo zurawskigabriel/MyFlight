@@ -1,5 +1,5 @@
 
-public class Aeronave implements Imprimivel, Contavel {
+public class Aeronave implements Imprimivel, Comparable<Aeronave> {
     public static int totalAeronaves = 0;
     private String codigo;
     private String descricao;
@@ -45,6 +45,11 @@ public class Aeronave implements Imprimivel, Contavel {
 
     public void imprimir() {
         System.out.println(codigo + " - " + descricao);
+    }
+
+    public Aeronave compareTo(Aeronave outra) {
+        return descricao.compareTo(outra.descricao);
+
     }
 
 }
