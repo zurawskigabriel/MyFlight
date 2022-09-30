@@ -1,36 +1,31 @@
+package pucrs.myflight.modelo;
 
-public class Aeroporto {
+public class CiaAerea {
     private String codigo;
     private String nome;
-    private Geo loc;
 
     //////////// Criação do construtor ////////////
 
-    public Aeroporto(String codigo, String nome, Geo loc) {
-        this.codigo = codigo;
+    public CiaAerea(String nome, String codigo) {
         this.nome = nome;
-        this.loc = loc;
+        this.codigo = codigo;
     }
 
     //////////// Criação dos gets ////////////
-
-    public String getCodigo() {
-        return codigo;
-    }
 
     public String getNome() {
         return nome;
     }
 
-    public Geo getLoc() {
-        return loc;
+    public String getCodigo() {
+        return codigo;
     }
 
     //////////// Criação do toString ////////////
 
     @Override
     public String toString() {
-        String lista = "Codigo: " + codigo + "\nNome: " + nome + "\nLocalização: " + loc + "\n\n";
+        String lista = "Nome:" + nome + "\nCódigo: " + codigo + "\n\n";
 
         return lista;
     }

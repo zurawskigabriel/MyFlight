@@ -1,3 +1,4 @@
+package pucrs.myflight.modelo;
 
 public class Aeronave implements Imprimivel, Comparable<Aeronave> {
     public static int totalAeronaves = 0;

@@ -1,10 +1,10 @@
+package pucrs.myflight.modelo;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 
-public class VooVariasEscalas extends Voo {
-    private ArrayList<Rota> escalas = new ArrayList<>();
+public class VooEscalas extends Voo {
+    private Rota rotaFinal;
 
     public VooEscalas(Rota rotaFinal, LocalDateTime datahora, Duration duracao, Rota rota, Status status) {
         super(datahora, duracao, rota, status);
