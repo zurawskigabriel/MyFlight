@@ -1,33 +1,21 @@
+
 import java.time.Duration;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class VooEscalas extends Voo {
+    private Rota rotaFinal;
 
-    public VooEscalas(Duration duracao, Rota rota, Voo.Status status) {
-        super(duracao, rota, status);
-        this.rotafinal = rotafinal;
+    public VooEscalas(Rota rotaFinal, LocalDateTime datahora, Duration duracao, Rota rota, Status status) {
+        super(datahora, duracao, rota, status);
+        this.rotaFinal = rotaFinal;
     }
 
-    private Rota rotafinal;
-
-    public Rota getRotaFianl() {
-        return rotafinal;
+    public Rota getRotaFinal() {
+        return rotaFinal;
     }
 
-    // @Override
-    // public String toString(){
-    // String stg= "Status:"+ status;//+ " " + datahora + "("+duracao+"): " + rota +
-    // " -> " + rotaFinal;
-    // return stg;
-    // }
-
-    /*
-     * 
-     * 
-     * 
-     * Comentarios
-     * 
-     * 
-     */
+    @Override
+    public String toString() {
+        return super.toString() + " -> " + rotaFinal;
+    }
 }

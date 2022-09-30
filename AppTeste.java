@@ -1,14 +1,15 @@
+
 import java.time.Duration;
 import java.time.LocalDateTime;
 
-public class Main {
+public class AppTeste {
   public static void main(String[] args) {
 
     /////////////// Criação dos objetos ///////////////
 
-    Geo loc = new Geo(111, 222);
-    Geo loc1 = new Geo(333, 444);
-    Geo geo = new Geo(555, 666);
+    Geo loc = new Geo(-23.4322, -46.4692);
+    Geo loc1 = new Geo(-29.9942, -51.1714);
+    Geo geo = new Geo(-23.6257, -46.6611);
 
     CiaAerea cia = new CiaAerea("Gol", "Gol123");
     CiaAerea cia1 = new CiaAerea("TAM", "TAM123");
@@ -32,6 +33,10 @@ public class Main {
 
     Voo voo = new Voo(datahora, duracao, rota, Voo.Status.CONFIRMADO);
     Voo voo1 = new Voo(datahora1, duracao1, rota1, Voo.Status.ATRASADO);
+
+    ////////// Cálculo da distância entre Guarulhos e Salgado Filho (Exercicio)
+
+    System.out.println("Distância entre Guarulhos e Salgado Filho: " + geo.distancia(loc, loc1));
 
     /////////////// Armazenando com os métodos add ///////////////
 

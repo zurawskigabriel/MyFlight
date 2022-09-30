@@ -1,4 +1,3 @@
-import java.util.Collections;
 
 public class Aeronave implements Imprimivel, Comparable<Aeronave> {
     public static int totalAeronaves = 0;
@@ -38,7 +37,7 @@ public class Aeronave implements Imprimivel, Comparable<Aeronave> {
         return lista;
     }
 
-    ///////////// Interfaces (Exercício 3) ////////////
+    ///////////// Interfaces (Exercício) ////////////
 
     public int getTotalAeronaves() {
         return totalAeronaves;

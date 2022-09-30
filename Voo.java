@@ -1,3 +1,4 @@
+
 import java.time.LocalDateTime;
 import java.time.Duration;
 
@@ -51,6 +52,7 @@ public class Voo {
     //////////// sobrecarga (Exercicio) ////////////
 
     public Voo(Duration duracao, Rota rota, Status status) {
+        // LocalDateTime datahora = new LocalDateTime.of(2022, 4, 12, 16, 30);
         this.duracao = duracao;
         this.rota = rota;
         this.status = status;
