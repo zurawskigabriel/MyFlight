@@ -3,59 +3,38 @@ package pucrs.myflight.modelo;
 import java.time.LocalDateTime;
 import java.time.Duration;
 
-public class Voo {
-    enum Status {
-        CONFIRMADO, ATRASADO, CANCELADO
-    }
+public abstract class Voo
+{
+    public enum Status { CONFIRMADO, ATRASADO, CANCELADO }; 
 
     private LocalDateTime datahora;
-    private Duration duracao;
-    private Rota rota;
     private Status status;
 
-    //////////// Criação do construtor ////////////
-
-    public Voo(LocalDateTime datahora, Duration duracao, Rota rota, Status status) {
-        this.datahora = datahora;
-        this.duracao = duracao;
-        this.rota = rota;
-        this.status = status;
+    public Voo(LocalDateTime dh) {
+       this.datahora = dh;
+       this.status = Status.CONFIRMADO;
     }
 
-    //////////// Criação dos gets ////////////
-
-    public LocalDateTime getDataHora() {
-        return datahora;
+    public LocalDateTime getDataHora() { 
+        return datahora; 
     }
 
-    public Duration getDuracao() {
-        return duracao;
-    }
+    public abstract Rota getRota();
 
-    public Rota getRota() {
-        return rota;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    //////////// Criação do toString ////////////
-
+    public abstract Duracao getDuracao(); 
+    
     @Override
     public String toString() {
-        String lista = "Horário:  " + datahora + "\nDuração: " + duracao + "\nRota: " + rota + "\nStatus: " + status
-                + "\n\n";
-
-        return lista;
+       return status + " " + datahora;
     }
+}
 
     //////////// sobrecarga (Exercicio) ////////////
 
-    public Voo(Duration duracao, Rota rota, Status status) {
-        // LocalDateTime datahora = new LocalDateTime.of(2022, 4, 12, 16, 30);
+    /*public Voo(Duration duracao, Rota rota, Status status) {
+        LocalDateTime dh = new LocalDateTime.of(2016, 8, 12, 12, 00);
         this.duracao = duracao;
         this.rota = rota;
         this.status = status;
-    }
+    }*/
 }

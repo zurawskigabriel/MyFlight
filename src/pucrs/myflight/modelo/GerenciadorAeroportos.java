@@ -1,5 +1,6 @@
 package pucrs.myflight.modelo;
 
+import java.util.Collections;
 import java.util.ArrayList;
 
 public class GerenciadorAeroportos {
@@ -23,5 +24,11 @@ public class GerenciadorAeroportos {
         }
 
         return null;
+    }
+
+    //////////// Ordenação com Comparable (Exercicio) ////////////
+
+    public void ordenaDescricao() {
+        Collections.sort(aeroportos);
     }
 }

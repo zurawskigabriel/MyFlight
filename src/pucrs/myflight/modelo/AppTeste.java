@@ -29,11 +29,10 @@ public class AppTeste {
     LocalDateTime datahora = LocalDateTime.of(2022, 9, 10, 17, 30);
     LocalDateTime datahora1 = LocalDateTime.of(2022, 8, 14, 07, 40);
 
-    Duration duracao = Duration.ofMinutes(120);
     Duration duracao1 = Duration.ofMinutes(180);
 
-    Voo voo = new Voo(datahora, duracao, rota, Voo.Status.CONFIRMADO);
-    Voo voo1 = new Voo(datahora1, duracao1, rota1, Voo.Status.ATRASADO);
+    Voo voo = new VooDireto(datahora, rota);
+    Voo voo1 = new VooDireto(datahora1, rota1);
 
     ////////// Cálculo da distância entre Guarulhos e Salgado Filho (Exercicio)
 
@@ -65,25 +64,32 @@ public class AppTeste {
 
     /////////////// Printando todos com os métodos listar ///////////////
 
-    System.out.println("Aeronaves////////////////////////////////////////////////////////////\n");
-
-    System.out.println(gerenciadoraeronaves.listarTodos().toString());
-
-    System.out.println("Aeroportos////////////////////////////////////////////////////////////");
-
-    System.out.println(gerenciadoraeroportos.listarTodos().toString());
-
-    System.out.println("Cias////////////////////////////////////////////////////////////");
-
-    System.out.println(gerenciadorcias.listarTodos().toString());
-
-    System.out.println("Rotas////////////////////////////////////////////////////////////");
-
-    System.out.println(gerenciarrotas.listarTodos().toString());
-
-    System.out.println("Voos////////////////////////////////////////////////////////////");
-
-    System.out.println(gerenciadorvoos.listarTodos().toString());
+    /*
+     * System.out.println(
+     * "Aeronaves////////////////////////////////////////////////////////////\n");
+     * 
+     * System.out.println(gerenciadoraeronaves.listarTodos().toString());
+     * 
+     * System.out.println(
+     * "Aeroportos////////////////////////////////////////////////////////////");
+     * 
+     * System.out.println(gerenciadoraeroportos.listarTodos().toString());
+     * 
+     * System.out.println(
+     * "Cias////////////////////////////////////////////////////////////");
+     * 
+     * System.out.println(gerenciadorcias.listarTodos().toString());
+     * 
+     * System.out.println(
+     * "Rotas////////////////////////////////////////////////////////////");
+     * 
+     * System.out.println(gerenciarrotas.listarTodos().toString());
+     * 
+     * System.out.println(
+     * "Voos////////////////////////////////////////////////////////////");
+     * 
+     * System.out.println(gerenciadorvoos.listarTodos().toString());
+     */
 
     /////////////// Realizando pesquisas e printando ///////////////
 

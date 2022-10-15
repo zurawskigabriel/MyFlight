@@ -43,6 +43,6 @@ public class Rota {
         return lista;
     }
 
-    //////////// Uso so compareTo (Exercicio) ////////////
+    //////////// Ordenação com Comparable (Exercicio) ////////////
 
 }
